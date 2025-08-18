@@ -4,7 +4,7 @@ import { newContext, useLogin } from "../context/contextApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 function CalaDetail() {
-  const { setBuying, isLogin, setIsLogin } = useLogin();
+  const { setBuying, isLogin } = useLogin();
   const { id } = useParams();
   const [calas, setCalas] = useState([]);
   const navigate = useNavigate();
